@@ -109,4 +109,17 @@ const myStringInt = "420 020";
 const sumaInt = 80 + parseInt(myStringInt)
 console.log("Resultado de suma int: " + sumaInt);
 
-// toParseFloat
+// toBoolean
+const isBelicoso = "true";
+
+if (isBelicoso == "true" )
+    console.log("Denle su belikin");
+else
+    console.log("Abran paso a la barredora");
+
+
+const a = undefined;
+const b = Number(a);
+const c = String(a);
+const d = Boolean(a)
+console.log(b, c, d );
