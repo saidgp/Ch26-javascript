@@ -225,7 +225,7 @@ console.log(clasesComunes2(student1Courses, student2Courses,student3Courses));
 // pepe pecas pica papas con un pico y una pala
 // la cantidad de letras 'p': 8
 // resolverlo usando arrow function
- let a = "pepe pecas pica papas con un pico y una pala";
+ let mes = "pepe pecas pica papas con un pico y una pala";
  let pes = (k) => {
     let l = 0;
     for (i=0; i<=k.length; i++){
@@ -236,7 +236,7 @@ console.log(clasesComunes2(student1Courses, student2Courses,student3Courses));
 };
    return l;
 };
-console.log(pes(a)); 
+console.log(pes(mes)); 
 
 const contadorDeLetras= (frase, letra) => {
     let contador = 0;
