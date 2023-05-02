@@ -104,9 +104,53 @@ while(confirm("¿Quieres continuar?")){
     console.log(`Has continuado ${++counter} ${counter>1? "veces":"vez"}`);
 } */
 
-const number = [9,5,6,7,8];
+/* const number = [9,5,6,7,8];
 let i =0;
 while(i<number.length){
     console.log(number[i],)
     i++;
-}
+} */
+// --------------------- Ciclo do while---------------------------------
+/* 
+Crea un cuble que ejecute una sentencia hasta que la comprobacion se evalue falsa
+Y la condicion se evalua despues de ejecutar la sentencia, por lo que la sentencia 
+se ejecuta al menos una vez
+
+
+do{
+    sentencia;
+} while(comprobacion);
+*/
+
+let iteracion =0;
+do{
+    iteracion++
+    console.log("N. de iteracions do-while "+iteracion);
+} while(iteracion<10);
+
+/*
+FIFO: First Input, First Output
+LIFO: Last Input, First Output
+*/
+
+const alimentos = [];
+
+// Usar FIFO
+alimentos.push("Manzanas del lunes");
+alimentos.push("Manzanas del miercoles");
+alimentos.push("Manzanas de hoy");
+
+//Sacar las manzana 
+console.log(alimentos);
+console.log("sacando las manzanas antiguas "+alimentos.shift());
+console.log(alimentos);
+
+//Usar LIFO
+
+const producto=[];
+//Temporada navideña
+producto.push("Desarmadores");
+producto.push("Martillo");
+producto.push("Luces de colores");
+console.log(producto);
+console.log("Sacando el producto mas reciente "+ producto.pop());
