@@ -202,4 +202,3 @@ console.log("Modelos: " + model, ",Color: " + colorauto);
     const{cociente, residuo} =  division(22,3);
     console.log("Cociente: "+ cociente , "Residuo " + residuo  );
 
-
