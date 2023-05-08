@@ -53,3 +53,41 @@ for (let a in dataEmployee){
 };
 localStorage.setItem("datos-empleado", JSON.stringify(dataEmployee));
 sessionStorage.setItem("datos-empleado", JSON.stringify(dataEmployee));
+
+//Bote lunetas
+const boteLunetas ={
+    cantidad: 20,
+    sabor: "chocolate",
+    costo: 35,
+
+    abrir : function(){
+        return "despachar producto";
+    },
+
+    comer: function (lunetasComidas){
+        return this.cantidad-=lunetasComidas;
+    }
+}
+
+console.log("me bote de lunetas tiene: "+boteLunetas.comer(5));
+
+const car = {
+color: "black",
+type: "sedan",
+brand: "Hyundai",
+price: 250_000,
+/* igniteEngine: function (boolean) {
+  if (boolean === true) {
+    return "Engine is on";
+  } else {
+    return "Engine is off";
+  }
+}, */
+
+igniteEngine: ( state ) => state? "Engine is on": "Engine is off"
+
+};
+
+console.log(car.igniteEngine(false));
+console.log(car.igniteEngine(true));
+
